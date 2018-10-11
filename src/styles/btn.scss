@@ -1,0 +1,73 @@
+$blue:#409EFF;
+$light-blue:#3A71A8;
+$green: #30B08F;
+$tiffany: #4AB7BD;
+$yellow:#FEC171;
+$panGreen: #30B08F;
+$success:#67C23A;
+$warning:#E6A23C;
+$danger:#F56C6C;
+$info:#909399;
+.success {
+  color: $success;
+}
+
+.warning {
+  color: $warning;
+}
+
+.danger {
+  color: $danger;
+}
+
+.info {
+  color: $info
+}
+
+@mixin colorBtn($color) {
+  color: #fff;
+  background: $color;
+  &:hover {
+    color: $color;
+    &:before,
+    &:after {
+      background: $color;
+    }
+  }
+}
+
+.blue-btn {
+  @include colorBtn($blue)
+}
+
+.light-blue-btn {
+  @include colorBtn($light-blue)
+}
+
+.success-btn {
+  @include colorBtn($success)
+}
+
+.warning-btn {
+  @include colorBtn($warning)
+}
+
+.danger-btn {
+  @include colorBtn($danger)
+}
+
+.info-btn {
+  @include colorBtn($info)
+}
+
+.green-btn {
+  @include colorBtn($green)
+}
+
+.tiffany-btn {
+  @include colorBtn($tiffany)
+}
+
+.yellow-btn {
+  @include colorBtn($yellow)
+}
